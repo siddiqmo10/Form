@@ -1,0 +1,312 @@
+<style>
+    html {
+        height: 100%;
+        /*Image only BG fallback*/
+        
+        
+    }
+    
+    body {
+        font-family: futura, arial, verdana;
+        /*background-color: #576366;*/
+        background-color: black;
+        background-image: url("https://i.postimg.cc/MHYHRP5P/artificial-intelligence-4715585-1280.jpg");
+        background-position: center;
+        
+        
+    }
+    
+    #msform{
+        padding: 10px;
+        opacity: 80%;
+    }
+        
+        .row{
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+
+    }
+        .position{
+            display: flex;
+            margin-left: -5px;
+            padding: 10px
+            
+            
+
+
+    }
+          
+          #msform input[type="text"]{
+              
+            appearance: none;
+            width: 100%;
+            margin: 2px 17px;
+            height: 45px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background: #e8ebed;
+            color: #576366;
+            font-size: 14px;
+            opacity: 100%;
+          }
+    #msform fieldset {
+        background: grey;
+        border: 0 none;
+        border-radius: 15px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 25px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+    /*Hide all except first fieldset*/
+    
+    /*inputs*/
+    #msform input, #msform textarea, #msform select, #msform option {
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: futura;
+        color: #2C3E50;
+        font-size: 15px;
+      font-weight: bold;
+    }
+    /*buttons*/
+    #msform .action-button {
+        width: 200px;
+        height: 50px;
+        background: #13426A;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+    #msform .action-button:hover, #msform .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    }
+    /*headings*/
+    .fs-title {
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #13426A;
+        
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .fs-subtitle {
+        font-weight: bold;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    input::placeholder{
+      opacity: 1;
+    }
+
+    /* position of labels */
+
+    .comp{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50;
+    }
+    
+    .fname{
+        margin-left: 405px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+    .lastnam{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .pos{
+        margin-left: 395px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .mail{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .mobil{
+        margin-left: 450px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .phone{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .post{
+        margin-left: 415px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .zipcode{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+    .cityname{
+        margin-left: 410px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .countryname{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .remark{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    </style>
+    
+    <!-- multistep form -->
+    <form id="msform" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mknqangd" method="post">
+      <!-- fieldsets -->
+      <fieldset>
+        <h1 class="fs-title">Get A Quote!</h1>
+        <label class="comp" for="company">Company</label>
+        <label class="fname" for="firstname">First Name</label>
+        <div class="row">
+
+        <!-- Name of Company -->
+        <input id="company" type="text" name="company" />
+        
+        <!-- Clients First Name -->
+        <input id="firstname" type="text" name="firstN" />
+        </div> 
+
+        <!--<div class="position"> -->
+        <label class="lastnam" for="lastname">Last Name</label>
+        <label class="pos" for="position">Position</label>
+        <!-- </div> -->        
+        <div class="row">
+
+        <!-- Clients Last Name -->
+        <input id= "lastname" type="text" name="lastN"  />
+
+        <!-- Clients Position -->
+        <input id="position" type="text" name="position"  />
+        </div>
+          
+        <label class="mail" for="email">Email</label>
+        <label class="mobil" for="mobile">Mobile</label>
+          <div class="row">
+
+        <!-- Clients Email -->
+        <input id="email" type="text" name="email"/>
+        <!-- Clients Mobile Number -->
+        <input id="mobile" type="text" name="mobile"/>
+        </div>
+          
+        <label class="phone" for="landline">Landline</label>
+        <label class="post" for="postal">Postal Address</label>
+          <div class="row">		  
+
+        <!-- Clients Landline Number -->
+        <input id="landline"type="text" name="landL" />
+        <!-- Clients Postal Address -->
+        <input id="postal" type="text" name="postal" />
+              </div>
+          
+        <label class="zipcode" for="zip">Zip Code</label>
+        <label class="cityname" for="city">City</label>  
+        <div class="row">  
+
+        <!-- Clients Zip Code -->
+        <input id="zip" type="text" name="zip" />
+        <!-- Clients City -->
+        <input id="city" type="text" name="city" />
+              </div>
+              
+        <label class="countryname" for="country">Country</label>    
+        <div class="row">
+     <!-- Clients Country -->
+        <input id="country" type="text" name="country" />
+             </div>
+        <br>
+          
+    <!-- Clients choice of Seminar -->
+        <select id="cars" name="products">
+        <option value="" disabled selected hidden>Choice of Seminar</option>  
+        <option value="generalseminar">General Seminar</option>
+        <option value="generalseminar">Technological Strategy 4.0 Seminar</option>  
+        <option value="EandFseminar">Entrepreneurial & Financial Strategy 4.0 Seminar</option>
+        <option value="mgmntseminar">Human Management 4.0++ Seminar</option>
+        <option value="marketingseminar">Human Marketing 4.0++ Seminar</option>
+      </select>
+                 
+                  
+    <!-- Clients choice of products -->	  
+    <select id="cars" name="products">
+                        <option value="" disabled selected hidden>Select a Product</option>
+                        <option value="2days">2 Days Seminar</option>
+                        <option value="4month">4 Months of Support</option>
+                        <option value="2d4m">2 Days Seminar + 4 Months of Support</option>
+                        <option value="5d6m">5 Days Seminar + 6 Months of Support</option>
+                    </select>
+        
+        <label class="remark" for="message">Your Remarks</label>           
+        <div class="row">
+     <input id="message" type="text" name="message" />
+        </div>
+
+        <div>
+            <span style="font-size:19px; color: white;">The purposes of data protection laws, HCE 4. Located at 11 avenue Rossellini, 69100 Villeurbanne, France, is the 'data controller' of your information collected in connection with the HCE Services 4.</span>
+        </div>
+
+        <div>
+            <span style="font-size:19px; color: white;">Your data is stored in the Wix data storage system and databases, and in the general Wix application. Your data is kept on a secure server protected by a firewall.</span>
+        </div>
+
+        <div>
+            <span style="font-size:19px; color: white;">To protect your personal data, we take reasonable precautions and follow industry best practices to ensure that it is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.</span>
+        </div>
+          
+       
+        <center><input type="submit" name="submit" class="submit action-button" value="Submit"/></center>
+      </fieldset>
+    </form>
+    
