@@ -1,0 +1,200 @@
+html {
+        height: 100%;
+        /*Image only BG fallback*/
+        
+        
+    }
+    
+    body {
+        font-family: futura, arial, verdana;
+        /*background-color: #576366;*/
+        background-color: black;
+        background-image: url("https://i.postimg.cc/MHYHRP5P/artificial-intelligence-4715585-1280.jpg");
+        background-position: center;
+        
+        
+    }
+    
+    #msform{
+        padding: 10px;
+        opacity: 80%;
+    }
+        
+        .row{
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+
+    }
+        .position{
+            display: flex;
+            margin-left: -5px;
+            padding: 10px
+            
+            
+
+
+    }
+          
+          #msform input[type="text"]{
+              
+            appearance: none;
+            width: 100%;
+            margin: 2px 17px;
+            height: 45px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background: #e8ebed;
+            color: #576366;
+            font-size: 14px;
+            opacity: 100%;
+          }
+    #msform fieldset {
+        background: grey;
+        border: 0 none;
+        border-radius: 15px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 25px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+    /*Hide all except first fieldset*/
+    
+    /*inputs*/
+    #msform input, #msform textarea, #msform select, #msform option {
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: futura;
+        color: #2C3E50;
+        font-size: 15px;
+      font-weight: bold;
+    }
+    /*buttons*/
+    #msform .action-button {
+        width: 200px;
+        height: 50px;
+        background: #13426A;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+    #msform .action-button:hover, #msform .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    }
+    /*headings*/
+    .fs-title {
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #13426A;
+        
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .fs-subtitle {
+        font-weight: bold;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    input::placeholder{
+      opacity: 1;
+    }
+
+    /* position of labels */
+
+    .comp{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50;
+    }
+    
+    .fname{
+        margin-left: 405px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+    .lastnam{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .pos{
+        margin-left: 395px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .mail{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .mobil{
+        margin-left: 450px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .phone{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .post{
+        margin-left: 415px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .zipcode{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+    .cityname{
+        margin-left: 410px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .countryname{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
+
+    .remark{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C3E50
+    }
